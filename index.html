@@ -322,24 +322,51 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Pipeline</h2>
 
-        <!-- Video Clip Extraction. -->
-        <h3 class="title is-4">Video Clip Extraction</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
+        <!-- Video Clip Extraction and Video Captioning. -->
+        <div class="columns is-centered">
+          <!-- Video Clip Extraction. -->
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-4">Video Clip Extraction</h2>
+              <div class="content has-text-justified">
+                <p>
+                  We can also animate the scene by interpolating the deformation latent codes of two input
+                  frames. Use the slider here to linearly interpolate between the left frame and the right
+                  frame.
+                </p>
+              </div>
+              <div class="column is-full has-text-centered">
+                <img src="./static/images/yolo_pipeline.jpg"
+                     class="humanoidx-image"
+                     alt="Humanoid-X pipeline image."/>
+              </div>
+            </div>
+          </div>
+          <!--/ Video Clip Extraction. -->
+    
+          <!-- Video Captioning. -->
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-4">Video Captioning</h2>
+              <div class="content has-text-justified">
+                <p>
+                  We can also animate the scene by interpolating the deformation latent codes of two input
+                  frames. Use the slider here to linearly interpolate between the left frame and the right
+                  frame.
+                </p>
+              </div>
+              <div class="column is-full has-text-centered">
+                <img src="./static/images/vid_llama_blurred.jpg"
+                     class="humanoidx-image"
+                     alt="Humanoid-X pipeline image."/>
+              </div>
+            </div>
+          </div>
+          <!--/ Video Captioning. -->
         </div>
-        <div class="column is-full has-text-centered">
-          <img src="./static/images/humanoidx.jpg"
-               class="humanoidx-image"
-               alt="Humanoid-X pipeline image."/>
-        </div>
-        <br/>
-        <!--/ Video Clip Extraction. -->
+        <!--/ Video Clip Extraction and Video Captioning. -->
 
-        <!-- 3D Human Pose Estimation and Video Captioning. -->
+        <!-- 3D Human Pose Estimation and Motion Retargeting from Humans to Humanoids. -->
         <div class="columns is-centered">
           <!-- 3D Human Pose Estimation. -->
           <div class="column">
@@ -353,7 +380,7 @@
                 </p>
               </div>
               <div class="column is-full has-text-centered">
-                <img src="./static/images/humanoidx.jpg"
+                <img src="./static/images/smpl_fixed.jpg"
                      class="humanoidx-image"
                      alt="Humanoid-X pipeline image."/>
               </div>
@@ -373,7 +400,7 @@
                 </p>
               </div>
               <div class="column is-full has-text-centered">
-                <img src="./static/images/humanoidx.jpg"
+                <img src="./static/images/retarget_figure.jpg"
                      class="humanoidx-image"
                      alt="Humanoid-X pipeline image."/>
               </div>
@@ -381,8 +408,24 @@
           </div>
           <!--/ Video Captioning. -->
         </div>
-        <!--/ 3D Human Pose Estimation and Video Captioning. -->
+        <!--/ 3D Human Pose Estimation and Motion Retargeting from Humans to Humanoidss. -->
 
+        <!-- Video Clip Extraction. -->
+        <h3 class="title is-4">Video Clip Extraction</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+        </div>
+        <div class="column is-full has-text-centered">
+          <img src="./static/images/humanoidx.jpg"
+               class="humanoidx-image"
+               alt="Humanoid-X pipeline image."/>
+        </div>
+        <br/>
+        <!--/ Video Clip Extraction. -->
 
         <!-- Re-rendering. -->
         <h3 class="title is-4">Re-rendering the input video</h3>
