@@ -281,18 +281,6 @@
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
 <!-- / Abstract. -->
@@ -313,12 +301,19 @@
             humanoid keypoints \( \mathcal{P}_{robot} \) for high-level control.
             Finally, we employ reinforcement learning to generate physically deployable
             humanoid actions \( \mathcal{A}_{robot} \).
+          </p>
+          <p>
             In this manner, we collect 163,800 pairs of motion samples
             \( \langle \mathcal{V}, \mathcal{T}, \mathcal{P}_{human}, \mathcal{P}_{robot}, \mathcal{A}_{robot} \rangle \)
             from Internet videos, which are leveraged to distill a universal humanoid pose control policy.
           </p>
         </div>
-        <div class="content has-text-centered">
+        <div class="column is-3 has-text-centered">
+          <img src="./static/images/humanoidx.pdf"
+               class="humanoidx-image"
+               alt="Humanoid-X pipeline image."/>
+        </div>
+        <!-- <div class="content has-text-centered">
           <video id="replay-video"
                  controls
                  muted
@@ -328,7 +323,7 @@
             <source src="./static/videos/replay.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
       </div>
     </div>
     <!--/ Method. -->
