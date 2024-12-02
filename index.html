@@ -294,18 +294,27 @@
         <h2 class="title is-3">Humanoid-X Dataset</h2>
         <div class="content has-text-justified">
           <p>
-            We mine massive human-centric video clips \( \mathcal{V} \) from the Internet.
-            We then extract text-based action descriptions \( \mathcal{T} \) and 3D human
+            Humanoid-X dataset consists of 163,800 pairs of motion samples
+            \( \langle \mathcal{V}, \mathcal{T}, \mathcal{P}_{human}, \mathcal{P}_{robot}, \mathcal{A}_{robot} \rangle \)
+            from Internet videos:
+          </p>
+          <p>
+            i. We mine massive human-centric video clips \( \mathcal{V} \) from the Internet.
+          </p>
+          <p>
+            ii. We extract text-based action descriptions \( \mathcal{T} \) and 3D human
             poses \( \mathcal{P}_{human} \) from the video clips.
-            Next, we retarget the motions from humans to humanoid robots, resulting in
+          </p>
+          <p>
+            iii. We retarget the motions from humans to humanoid robots, resulting in
             humanoid keypoints \( \mathcal{P}_{robot} \) for high-level control.
-            Finally, we employ reinforcement learning to generate physically deployable
+          </p>
+          <p>
+            iv. We employ reinforcement learning to generate physically deployable
             humanoid actions \( \mathcal{A}_{robot} \).
           </p>
           <p>
-            In this manner, we collect 163,800 pairs of motion samples
-            \( \langle \mathcal{V}, \mathcal{T}, \mathcal{P}_{human}, \mathcal{P}_{robot}, \mathcal{A}_{robot} \rangle \)
-            from Internet videos, which are leveraged to distill a universal humanoid pose control policy.
+            In this manner, we get the Humanoid-X dataset which is leveraged to distill a universal humanoid pose control policy.
           </p>
         </div>
         <div class="column is-full has-text-centered">
@@ -385,13 +394,24 @@
         <div class="column is- has-text-centered">
           <img src="./static/images/retarget_figure.jpg"
                class="retarget-image"
-               style="width: 50%; height: auto;"
+               style="width: 60%; height: auto;"
                alt="Humanoid-X pipeline image."/>
         </div>
         <!--/ Motion Retargeting from Humans to Humanoids. -->
+
+        <!-- Goal-conditioned Humanoid Control. -->
+        <h3 class="title is-4">Goal-conditioned Humanoid Control</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+        </div>
+        <!--/ Goal-conditioned Humanoid Control. -->
       </div>
     </div>
-
+    <!--/ Pipeline. -->
   </div>
 </section>
 <!--/ Dataset. -->
