@@ -301,23 +301,21 @@
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Method. -->
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p>
-            We mine massive human-centric video clips V from the Internet.
-            We then extract text-based action descriptions T and 3D human poses Phuman from the video clips.
-            Next, we retarget the motions from humans to humanoid robots, resulting in humanoid keypoints Probot for high-level control.
-            Finally, we employ reinforcement learning to generate physically deployable humanoid actions Arobot.
-            In this manner, we collect 163,800 pairs of motion samples ⟨V, T , Phuman, Probot, Arobot⟩ from Internet videos,
-            which are leveraged to distill a universal humanoid pose control policy.
-            We mine massive human-centric video clips \( V \) from the Internet.
-            We then extract text-based action descriptions \( T \) and 3D human poses \( P_{\text{human}} \) from the video clips.
-            Next, we retarget the motions from humans to humanoid robots, resulting in humanoid keypoints \( P_{\text{robot}} \) for high-level control.
-            Finally, we employ reinforcement learning to generate physically deployable humanoid actions \( A_{\text{robot}} \).
-            In this manner, we collect 163,800 pairs of motion samples \( \langle V, T , P_{\text{human}}, P_{\text{robot}}, A_{\text{robot}} \rangle \) from Internet videos,
-            which are leveraged to distill a universal humanoid pose control policy.
+            We mine massive human-centric video clips \( \mathcal{V} \) from the Internet.
+            We then extract text-based action descriptions \( \mathcal{T} \) and 3D human
+            poses \( \mathcal{P}_{human} \) from the video clips.
+            Next, we retarget the motions from humans to humanoid robots, resulting in
+            humanoid keypoints \( \mathcal{P}_{robot} \) for high-level control.
+            Finally, we employ reinforcement learning to generate physically deployable
+            humanoid actions \( \mathcal{A}_{robot} \).
+            In this manner, we collect 163,800 pairs of motion samples
+            \( \langle \mathcal{V}, \mathcal{T}, \mathcal{P}_{human}, \mathcal{P}_{robot}, \mathcal{A}_{robot} \rangle \)
+            from Internet videos, which are leveraged to distill a universal humanoid pose control policy.
           </p>
         </div>
         <div class="content has-text-centered">
