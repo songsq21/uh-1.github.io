@@ -42,7 +42,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -80,17 +80,18 @@
     </div>
 
   </div>
-</nav>
-
+</nav> -->
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">Learning from Massive Human Videos for Universal Humanoid Pose Control</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
+              <a href="">Author List</a><sup>1</sup>,</span>
+            <!-- <span class="author-block">
               <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
@@ -108,12 +109,13 @@
             </span>
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span>
+            </span> -->
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <!-- <span class="author-block"><sup>1</sup>University of Washington,</span> -->
+            <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
+            <span class="author-block"><sup>1</sup>Institutions,</span>
           </div>
 
           <div class="column has-text-centered">
@@ -175,24 +177,20 @@
   </div>
 </section>
 
+<!-- Paper video. -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+        <source src="./static/videos/uh1_robot_demo.mp4"
                 type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
     </div>
   </div>
 </section>
+<!--/ Paper video. -->
 
-
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -247,8 +245,7 @@
       </div>
     </div>
   </div>
-</section>
-
+</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -258,31 +255,23 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Scalable learning of humanoid robots is crucial for their deployment in real-world applications.
+            While traditional approaches primarily rely on reinforcement learning or teleoperation to achieve whole-body control,
+            they are often limited by the diversity of simulated environments and the high costs of demonstration collection.
+            In contrast, human videos are ubiquitous and present an untapped source of semantic and motion information that could
+            significantly enhance the generalization capabilities of humanoid robots.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            This paper introduces Humanoid-X, a large-scale dataset of over 20 million humanoid robot poses with corresponding
+            text-based motion descriptions, designed to leverage this abundant data.
+            Humanoid-X is curated through a comprehensive pipeline: data mining from the Internet, video caption generation,
+            motion retargeting of humans to humanoid robots, and policy learning for real-world deployment.
+            With Humanoid-X, we further train a large humanoid model, UH-1, which takes text instructions as input and outputs
+            corresponding actions to control a humanoid robot.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Extensive simulated and real-world experiments validate that our scalable training approach leads to superior
+            generalization in text-based humanoid control, marking a significant step toward adaptable, real-world-ready humanoid robots.
           </p>
         </div>
       </div>
@@ -290,7 +279,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -298,7 +287,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
