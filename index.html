@@ -39,6 +39,9 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -247,6 +250,7 @@
   </div>
 </section> -->
 
+<!-- Abstract. -->
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -291,13 +295,124 @@
     <!--/ Paper video. -->
   </div>
 </section>
+<!-- / Abstract. -->
 
-
+<!-- Method. -->
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Method. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            We mine massive human-centric video clips V from the Internet.
+            We then extract text-based action descriptions T and 3D human poses Phuman from the video clips.
+            Next, we retarget the motions from humans to humanoid robots, resulting in humanoid keypoints Probot for high-level control.
+            Finally, we employ reinforcement learning to generate physically deployable humanoid actions Arobot.
+            In this manner, we collect 163,800 pairs of motion samples ⟨V, T , Phuman, Probot, Arobot⟩ from Internet videos,
+            which are leveraged to distill a universal humanoid pose control policy.
+            We mine massive human-centric video clips \( V \) from the Internet.
+            We then extract text-based action descriptions \( T \) and 3D human poses \( P_{\text{human}} \) from the video clips.
+            Next, we retarget the motions from humans to humanoid robots, resulting in humanoid keypoints \( P_{\text{robot}} \) for high-level control.
+            Finally, we employ reinforcement learning to generate physically deployable humanoid actions \( A_{\text{robot}} \).
+            In this manner, we collect 163,800 pairs of motion samples \( \langle V, T , P_{\text{human}}, P_{\text{robot}}, A_{\text{robot}} \rangle \) from Internet videos,
+            which are leveraged to distill a universal humanoid pose control policy.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/replay.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ Method. -->
+  </div>
+</section>
+<!--/ Method. -->
+
+<!-- Dataset. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Humanoid-X Dataset</h2>
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Animation</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Interpolating states</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_start.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>Start Frame</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="1" min="0" max="100" value="0" type="range">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_end.jpg"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">End Frame</p>
+          </div>
+        </div>
+        <br/>
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-4">Re-rendering the input video</h3>
+        <div class="content has-text-justified">
+          <p>
+            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            viewpoint such as a stabilized camera by playing back the training deformations.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/replay.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+
+
+
+
 
     <div class="columns is-centered">
-
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
@@ -428,24 +543,25 @@
 
   </div>
 </section>
+<!--/ Dataset. -->
 
-
+<!-- Citation. -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
+    <!-- <pre><code>@article{park2021nerfies,
   author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
   title     = {Nerfies: Deformable Neural Radiance Fields},
   journal   = {ICCV},
   year      = {2021},
-}</code></pre>
+}</code></pre> -->
   </div>
 </section>
-
+<!--/ Citation. -->
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
+    <!-- <div class="content has-text-centered">
       <a class="icon-link"
          href="./static/videos/nerfies_paper.pdf">
         <i class="fas fa-file-pdf"></i>
@@ -453,7 +569,7 @@
       <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
-    </div>
+    </div> -->
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
