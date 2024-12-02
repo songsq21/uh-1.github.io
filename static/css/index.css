@@ -155,3 +155,8 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.humanoidx-image {
+  width: 100%;
+  height: auto;
+}
