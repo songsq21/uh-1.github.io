@@ -137,12 +137,6 @@
                                     <iframe id="recordingViewer" src="" width="744" height="420" allow="autoplay"
                                         allowfullscreen></iframe>
                                     <h6 class="title is-6"></h6>
-                                    <div class="columns" style="font-weight: 100; font-size: 1.0em">*
-                                        Recordings are created with &thinsp; <a
-                                            href="https://github.com/TheDuckAI/DuckTrack">Ducktrack</a><img
-                                            class="duck_icon" src="static/images/duck_icon-removebg-preview.png"
-                                            width="30" height="30">.
-                                    </div>
                                 </div>
 
                                 <div class="box">
@@ -176,7 +170,8 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
 
-            fetch('./static/data/test_small_recording.json')
+            // fetch('./static/data/test_small_recording.json')
+            fetch(`./static_explorer/data_sort_list.json`)
                 .then(response => response.json())
                 .then(jsonData => {
                     const container = document.getElementById('categoriesContainer');
