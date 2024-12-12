@@ -1,5 +1,65 @@
 [
     {
+        "id": "_-DsSsbMa9k_000032_000042_clip_1",
+        "domain": "Kinetics700",
+        "text_description": "A man is standing in a room and talking on the phone.",
+        "raw_video": "https://drive.google.com/file/d/10dgfxR34QpRrW43iZ_AsCNGC15nRDmoO/preview",
+        "smpl_video": "https://drive.google.com/file/d/1NNn4rKePASqGj-_u_2feY86Iq1VolSNQ/preview",
+        "keypoints": "https://drive.google.com/file/d/1bsXFop6ej-hWxCH5Wi3WZc2n6qImn3Gj/preview",
+        "actions": "https://drive.google.com/file/d/1_wmkoZwL9_HXXv4YiSS2DZ1EDN0CdCMM/preview" 
+    },
+
+    {
+        "id": "_0m_YMpQayA_000168_000178_clip_1",
+        "domain": "Kinetics700",
+        "text_description": "A man is playing tennis on a court, hitting the ball with his racket.",
+        "raw_video": "https://drive.google.com/file/d/1mDOcKopb9VwQXoNMKIJx8dVmFg7tSLfh/preview",
+        "smpl_video": "https://drive.google.com/file/d/1uxLba_nh2pjHq7BKTFJkeoBbIc7jmEDo/preview",
+        "keypoints": "https://drive.google.com/file/d/1-08aHZFQylbFCXD1aB1EX5zxReNCkd5f/preview",
+        "actions": "https://drive.google.com/file/d/1yhHnZIhLS_oB2L8qYooKcFDvkaDun3ex/preview" 
+    },
+
+    {
+        "id": "_0S9ByTZPL4_000003_000013_clip_1",
+        "domain": "Kinetics700",
+        "text_description": "A man is riding a scooter on the sidewalk near the water.",
+        "raw_video": "https://drive.google.com/file/d/11wmCojxEoe566Pyo2Alrdt0AbBKcDJAt/preview",
+        "smpl_video": "https://drive.google.com/file/d/1kf4Ers6e3pD0WU7m7IfBcTaNtY8rTwX8/preview",
+        "keypoints": "https://drive.google.com/file/d/1bA1wQ7u37SF2AVFptcWqwJlFHiK8DUKy/preview",
+        "actions": "https://drive.google.com/file/d/18Ml5SesN0eTCCslMAVeTHkjnb8tiX37k/preview" 
+    },
+
+    {
+        "id": "_1WeIYv9q3Y_000006_000016_clip_11",
+        "domain": "Kinetics700",
+        "text_description": "A man is riding an unicycle in front of a small building, interacting with a bicycle and a motorcycle.",
+        "raw_video": "https://drive.google.com/file/d/1EZSN3NJ2NT9rtg2gxmmaCDPYSM-7a00e/preview",
+        "smpl_video": "https://drive.google.com/file/d/18vTwKTFO-nQyp1zb8hkTQd3j6vbzFJb-/preview",
+        "keypoints": "https://drive.google.com/file/d/1QyWEzCqlOgKLq74PbUO6aAqRigwJ9eRf/preview",
+        "actions": "https://drive.google.com/file/d/1ekTU4Fb1GrpC4a67EXGmxzChl7rPexnX/preview" 
+    },
+
+    {
+        "id": "1H6PS_clip_1",
+        "domain": "Charades",
+        "text_description": "A man is standing in a kitchen, holding a cup of coffee and looking at himself in the mirror.",
+        "raw_video": "https://drive.google.com/file/d/1RRMA63gZOfhCj8C3syZrL5ImXhtlUOJX/preview",
+        "smpl_video": "https://drive.google.com/file/d/1RpjFCrRVXQ5Zje08PaJUdvOBrUKurczi/preview",
+        "keypoints": "https://drive.google.com/file/d/10TaixvU_VOyIbbYV5e35ZCybgX3jAUa9/preview",
+        "actions": "https://drive.google.com/file/d/1fGOEcH-3jE-gvlS73jogUWGX21LIJlFB/preview" 
+    },
+
+    {
+        "id": "2_feet_zig_zag_and_back_jump_roping_clip_5",
+        "domain": "Online Videos",
+        "text_description": "The human is jumping up and down in the air.",
+        "raw_video": "https://drive.google.com/file/d/1r6TEsQD8mtT4hGSx1uRDWRQd6-h0jQwq/preview",
+        "smpl_video": "https://drive.google.com/file/d/1wPQbbJfmgJNDpcLTiEe7LzTgp-utPXZt/preview",
+        "keypoints": "https://drive.google.com/file/d/1qd0MhG5t-lrFz9T7lfRbXxW4w0g1NuRF/preview",
+        "actions": "https://drive.google.com/file/d/16R4RTr1GNHdvFy61004EZYDExdZdtnim/preview" 
+    },
+
+    {
         "id": "2WW04_clip_1",
         "domain": "Charades",
         "text_description": "In the video, a woman is seen standing in a room, holding a chair and looking around.",
@@ -7,5 +67,125 @@
         "smpl_video": "https://drive.google.com/file/d/1LYEbZxX-JGg2g3tK-sojTvdMnTpVsWW0/preview",
         "keypoints": "https://drive.google.com/file/d/1zsFfctmmpa58_gFN3yRyNT4YlrQtolSd/preview",
         "actions": "https://drive.google.com/file/d/1OUXEqXIaBbPJH3kH0oQ0-Bex-0GQh1S3/preview" 
+    },
+
+    {
+        "id": "5_minute_morning_stretch_amp_mobility_routine_iron_out_the_kinks_amp_feel_amazing_clip_3",
+        "domain": "Online Videos",
+        "text_description": "The human is doing yoga in the living room, standing on a wooden floor and stretching his arms and legs.",
+        "raw_video": "https://drive.google.com/file/d/1OIIicYBHNWOTjk45Jycc12wOulc-5-zj/preview",
+        "smpl_video": "https://drive.google.com/file/d/1-09eFJcdCv2UPbKnsgoDMotGMf7bOTyB/preview",
+        "keypoints": "https://drive.google.com/file/d/1u6guqW-hzb-liuG6EPZ2j7ZbjewXypRW/preview",
+        "actions": "https://drive.google.com/file/d/1Xw44Ad3YhmP0rgigYstBk6_-kI1jAEqP/preview" 
+    },
+
+    {
+        "id": "5_minute_passive_squat_hold_challenge_5minutesquatclub_clip_3",
+        "domain": "Online Videos",
+        "text_description": "The human is doing yoga in a room with a purple rug and a white wall.",
+        "raw_video": "https://drive.google.com/file/d/1XddBdgxWMYOfXA08uUrY6EENnT_gO-vS/preview",
+        "smpl_video": "https://drive.google.com/file/d/1FaH_zbuQSlG4bSRssqcd_y7Dmjm0H3S7/preview",
+        "keypoints": "https://drive.google.com/file/d/1kpEKhgieSX6fEmkF4toUieZwhXTJeKvC/preview",
+        "actions": "https://drive.google.com/file/d/1TQ4JZh6bO27yNhtHaNXLs3DvCRfNcQ3l/preview" 
+    },
+    
+    {
+        "id": "5_minute_refresh_office_stretch_clip_4",
+        "domain": "Online Videos",
+        "text_description": "A woman is doing yoga in a room with a large window, a green plant, and a brown wooden chair.",
+        "raw_video": "https://drive.google.com/file/d/18ceIIrjsodhfCdswjyAAeWfgroGDYfUp/preview",
+        "smpl_video": "https://drive.google.com/file/d/1Jqbt3l6YLpFJRF8ilCBF6S0uA4x-4Cat/preview",
+        "keypoints": "https://drive.google.com/file/d/17v5qmN1Ol8MfXIhQr4lYMOXg_waKBYdk/preview",
+        "actions": "https://drive.google.com/file/d/1TY31oOm4-wEk8dHDrs53eONC5NEq-Dq5/preview" 
+    },
+
+    {
+        "id": "5_tips_to_improve_walking__after_total_knee_replacement_using_an_agility_ladder__diykneept_clip_3",
+        "domain": "Online Videos",
+        "text_description": "A man is standing on a ladder in an office, doing something with his hands.",
+        "raw_video": "https://drive.google.com/file/d/1lTicA58ffodXJ1OpoGec31hmhSBtIPc6/preview",
+        "smpl_video": "https://drive.google.com/file/d/1ptDr2jTQhKCaDkT-UBg0TbnnFpcONj-q/preview",
+        "keypoints": "https://drive.google.com/file/d/1UWGVz-8wxKvYZ0hJnvSqSKQiVi3qwFnt/preview",
+        "actions": "https://drive.google.com/file/d/18Zu2xs4uVPU7iJp4EYHZ6CjgSxvjDLxi/preview" 
+    },
+
+    {
+        "id": "000056",
+        "domain": "AMASS",
+        "text_description": "A person walks forward and stumbles to the left, then continues to walk.",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "https://drive.google.com/file/d/1LWYoqSwktpkgKQdZjpQDb7JxZ3pVVLW8/preview",
+        "actions": "https://drive.google.com/file/d/1nxuYJ5K_yFvn4gC4q7Ju1kkDDHrCp4ch/preview" 
+    },
+
+    {
+        "id": "000162",
+        "domain": "AMASS",
+        "text_description": "The standing person brings their hands up to their armpits and flaps their elbows up and down repeatedly.",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "https://drive.google.com/file/d/1kkfb5SrMe4wiKchUW4NV6wUD3WJ0_Ft3/preview",
+        "actions": "https://drive.google.com/file/d/1YE33OOlxRVCTXnuDz6RJc3CIwOkSBi7O/preview" 
+    },
+
+    {
+        "id": "000300",
+        "domain": "AMASS",
+        "text_description": "A person is perfoming a dance move.",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "https://drive.google.com/file/d/1mNLRqiKnONrEpxyNF7N34MBthzDGuXMp/preview",
+        "actions": "https://drive.google.com/file/d/1Oqf6FxsDcai3dh-zIzbC7HBQLwetY0UI/preview" 
+    },
+
+    {
+        "id": "000328",
+        "domain": "AMASS",
+        "text_description": "A person raises their right arm and performs a quick waving motion with their hand in a greet-like manner.",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "https://drive.google.com/file/d/13SqjYYiosKUbB2XRK_O_FWQdxU_9Nd0r/preview",
+        "actions": "https://drive.google.com/file/d/1ogr5hKHz5XiPF3mtPWdy_WOjv4z7kf2N/preview" 
+    },
+
+    {
+        "id": "000402",
+        "domain": "AMASS",
+        "text_description": "A person moves their hands and feet up and down while walking in circles.",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "https://drive.google.com/file/d/1d8sct6xZ0vxmyDXH_Mm9GRXtR64C1W4_/preview",
+        "actions": "https://drive.google.com/file/d/1zcBtBJ2VloWOQI8Wel0tKxUmv9LuGX-R/preview" 
+    },
+
+    {
+        "id": "000573",
+        "domain": "AMASS",
+        "text_description": "A person is dancing the waltz.",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "https://drive.google.com/file/d/1VihejE8F0LcUGZIU9Kdnt4KU-7Nv7gAp/preview",
+        "actions": "https://drive.google.com/file/d/1t1oM7Pc4fNSlzZrubLMlQShIQgNbnEnl/preview" 
+    },
+
+    {
+        "id": "000657",
+        "domain": "AMASS",
+        "text_description": "A man stands still and sways back and forth.",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "https://drive.google.com/file/d/1BvdUm4zWFw6VPWTCFDyVijsQLX8f4C72/preview",
+        "actions": "https://drive.google.com/file/d/12jFzcvMYtyb93MPmL2-wxCKIcOFOPvTv/preview" 
+    },
+
+    {
+        "id": "",
+        "domain": "",
+        "text_description": "",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "",
+        "actions": "" 
     }
 ]
