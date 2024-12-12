@@ -180,6 +180,76 @@
     },
 
     {
+        "id": "000754",
+        "domain": "AMASS",
+        "text_description": "A person lifts their arms alternating up and down.",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "https://drive.google.com/file/d/1kynZmWJ7eU2HAY_iWQ1I2y_CU6ct94sK/preview",
+        "actions": "https://drive.google.com/file/d/1GpdSAZfwRCKhzkM1ijh7OEZ9inHSyPmt/preview" 
+    },
+
+    {
+        "id": "000987",
+        "domain": "AMASS",
+        "text_description": "A person walks backwards and then stops.",
+        "raw_video": "",
+        "smpl_video": "",
+        "keypoints": "https://drive.google.com/file/d/1UbNqVEGc0ReUkif8yKwd8HARVh8SQOok/preview",
+        "actions": "https://drive.google.com/file/d/1wiLF_Swk20U0vODH0oqT0ajbL9b9x1fa/preview" 
+    },
+
+    {
+        "id": "ALS_IceBucket_Challenge_17_clip1",
+        "domain": "MotionX",
+        "text_description": "A man is standing on a balcony and pouring water on his head.",
+        "raw_video": "https://drive.google.com/file/d/14eMIDJkmT1lhNLCjVmaW6JDwA8FO-QHN/preview",
+        "smpl_video": "https://drive.google.com/file/d/1F3frEIHKLTa_gSVHi80DzRe2hs0HkR-H/preview",
+        "keypoints": "https://drive.google.com/file/d/1_Q3RqXlA5AWulLVHvbaLLRVGgFN-b8rl/preview",
+        "actions": "https://drive.google.com/file/d/1CQ7BzEI-v2YV5_u71bNCe6Fn897h6wKH/preview" 
+    },
+
+    {
+        "id": "Ancient_Drum_3_clip8",
+        "domain": "MotionX",
+        "text_description": "A man is playing a drum set in a room.",
+        "raw_video": "https://drive.google.com/file/d/1INMWfbgg8x9jFNnYjMPiI3_kuQdLf7D3/preview",
+        "smpl_video": "https://drive.google.com/file/d/1H9FVfAfviCzZFD8xb-FYbxuWfXUP7n4-/preview",
+        "keypoints": "https://drive.google.com/file/d/1gSFWW_iZ-igT01iVisetkzEIoF1J61cD/preview",
+        "actions": "https://drive.google.com/file/d/1HCtustqjuPHVe4-wLhjeGoRgG9-6Pjgw/preview" 
+    },
+
+    {
+        "id": "arm_wave_4_clip1",
+        "domain": "MotionX",
+        "text_description": "The human is doing a dance in a red room.",
+        "raw_video": "https://drive.google.com/file/d/19zTyhkV1Nuwp_CwX8JofNHM3eANwQkax/preview",
+        "smpl_video": "https://drive.google.com/file/d/1Lwbv2gUDHzvxyj2P_g1pmLv0WzKjMH7E/preview",
+        "keypoints": "https://drive.google.com/file/d/1lMRPUR6-TcSg8SrIA0NugFY-zP0rSqJJ/preview",
+        "actions": "https://drive.google.com/file/d/1QzLp9nWX06Gyt54eDVy5qvtxVDogvMeT/preview" 
+    },
+
+    {
+        "id": "back_pain_relief_if_it_hurts_when_you_bend_forward_clip_4",
+        "domain": "Online Videos",
+        "text_description": "A man is standing in a room and using a treadmill to exercise.",
+        "raw_video": "https://drive.google.com/file/d/1RsQrUitYHOkTyh41XNaxg-6bsKzTsul9/preview",
+        "smpl_video": "https://drive.google.com/file/d/1dBsrLxkkOlLN0UMXNY83ERxnc1_C73iF/preview",
+        "keypoints": "https://drive.google.com/file/d/1Wd9NGP37q-2cHlyRhOK4poD81njDXfZz/preview",
+        "actions": "https://drive.google.com/file/d/14Y0d9i1N0SIC9L4SbjFG4P9ArEDtwxlJ/preview" 
+    },
+
+    {
+        "id": "balancebeam_rotate_3_clip1",
+        "domain": "MotionX",
+        "text_description": "A woman is doing gymnastics on a balance beam in a gym.",
+        "raw_video": "https://drive.google.com/file/d/1rIZwkhmGo66V3ZcDMrXJpmHv9_4gmaCj/view?usp=drive_link",
+        "smpl_video": "https://drive.google.com/file/d/1T-7qZrZ3z7q5A3VENBCf6cm5Of0O84GJ/view?usp=drive_link",
+        "keypoints": "https://drive.google.com/file/d/11uB1b4HFQRdpvktFnzvraysvBqm53lDA/view?usp=drive_link",
+        "actions": "https://drive.google.com/file/d/1tCZenkkB0huimbS3SKXM1QAlAF6dVgh5/view?usp=drive_link" 
+    },
+
+    {
         "id": "",
         "domain": "",
         "text_description": "",
