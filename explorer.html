@@ -144,8 +144,17 @@
                                         task to view the recording.</div>
                                     <!-- <iframe id="raw_videoViewer" src="" width="744" height="420" allow="autoplay"
                                         allowfullscreen></iframe> -->
-                                    <video id="raw_videoViewer" src="" allow="autoplay" allowfullscreen></video>
-                                    <h6 class="title is-6"></h6>
+                                        <video id="raw_videoViewer" 
+                                        width="744" 
+                                        height="420" 
+                                        controls
+                                        preload="auto"
+                                        playsinline
+                                        webkit-playsinline>
+                                        <source src="" type="video/mp4">
+                                    </video>
+                                    <!-- <video id="raw_videoViewer" src="" allow="autoplay" allowfullscreen></video> -->
+                                    <!-- <h6 class="title is-6"></h6> -->
                                 </div>
 
                                 <!-- SMPL Video -->
