@@ -132,7 +132,6 @@
                                     <h5>Text Description</h5>
                                     <div>
                                         <md-block id="text_des-text"></md-block>
-                                        <span id="text_des-text"></span>
                                     </div>
                                 </div>
 
@@ -266,9 +265,9 @@
                                         // document.getElementById('taskid-text').innerHTML = taskId;
                                         document.getElementById('text_des-text').innerHTML = taskData.text_description;
                                         document.getElementById('raw_videoViewer').src = taskData.raw_video;
-                                        document.getElementById('smpl_videoViewer').src = taskData.smpl_video;
-                                        document.getElementById('keypointsViewer').src = taskData.keypoints;
-                                        document.getElementById('actionsViewer').src = taskData.actions;
+                                        // document.getElementById('smpl_videoViewer').src = taskData.smpl_video;
+                                        // document.getElementById('keypointsViewer').src = taskData.keypoints;
+                                        // document.getElementById('actionsViewer').src = taskData.actions;
                                     });
                             });
                             listItem.addEventListener("click", function () {

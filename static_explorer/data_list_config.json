@@ -3,7 +3,7 @@
         "id": "2WW04_clip_1",
         "domain": "Charades",
         "text_description": "In the video, a woman is seen standing in a room, holding a chair and looking around.",
-        "raw_video": "./static_explorer/raw_videos/2WW04_clip_1.mp4",
+        "raw_video": "/static_explorer/raw_videos/2WW04_clip_1.mp4",
         "smpl_video": "./static_explorer/smpl_videos/2WW04_clip_1.mp4",
         "keypoints": "./static_explorer/humanoid_keypoints/2WW04_clip_1.mp4",
         "actions": "./static_explorer/humanoid_actions/2WW04_clip_1_actions.mp4" 
