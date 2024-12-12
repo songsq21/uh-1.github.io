@@ -5,7 +5,7 @@
         "text_description": "In the video, a woman is seen standing in a room, holding a chair and looking around.",
         "raw_video": "https://drive.google.com/file/d/1z9iaFHcVymiOCC0hnjHjrI6ZNT4AZ439/preview",
         "smpl_video": "https://drive.google.com/file/d/1LYEbZxX-JGg2g3tK-sojTvdMnTpVsWW0/preview",
-        "keypoints": "./static_explorer/humanoid_keypoints/2WW04_clip_1_kp.mp4",
-        "actions": "./static_explorer/humanoid_actions/2WW04_clip_1_actions.mp4" 
+        "keypoints": "https://drive.google.com/file/d/1zsFfctmmpa58_gFN3yRyNT4YlrQtolSd/preview",
+        "actions": "https://drive.google.com/file/d/1OUXEqXIaBbPJH3kH0oQ0-Bex-0GQh1S3/preview" 
     }
 ]

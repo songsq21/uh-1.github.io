@@ -138,61 +138,31 @@
                                 <!-- Raw Video -->
                                 <div class="box">
                                     <h5>Raw Video</h5>
-                                    <iframe id="raw_videoViewer" src="" width="744" height="420" allow="autoplay"
+                                    <iframe id="raw_videoViewer" src="" allow="autoplay"
                                         allowfullscreen></iframe>
                                 </div>
 
                                 <!-- SMPL Video -->
                                 <div class="box">
                                     <h5>SMPL Video</h5>
-                                    <iframe id="smpl_videoViewer" src="" width="744" height="420" allow="autoplay"
+                                    <iframe id="smpl_videoViewer" src="" allow="autoplay"
                                         allowfullscreen></iframe>
                                 </div>
 
                                 <!-- Humanoid Keypoints (in video form) -->
-                                <!-- <div class="box">
+                                <div class="box">
                                     <h5>Humanoid Keypoints</h5>
-
-                                    <div class="column has-text-centered is-vcentered"
-                                        style="font-weight: 300; font-size: 1.1em">Select a
-                                        task to view the recording.</div>
-                                    <iframe id="keypointsViewer" src="" width="744" height="420" allow="autoplay"
+                                    <iframe id="keypointsViewer" src="" allow="autoplay"
                                         allowfullscreen></iframe>
-                                    <h6 class="title is-6"></h6>
-                                </div> -->
+                                </div>
 
                                 <!-- Humanoid Actions (in video form) -->
-                                <!-- <div class="box">
+                                <div class="box">
                                     <h5>Humanoid Actions</h5>
-
-                                    <div class="column has-text-centered is-vcentered"
-                                        style="font-weight: 300; font-size: 1.1em">Select a
-                                        task to view the recording.</div>
-                                    <iframe id="actionsViewer" src="" width="744" height="420" allow="autoplay"
+                                    <iframe id="actionsViewer" src="" allow="autoplay"
                                         allowfullscreen></iframe>
-                                    <h6 class="title is-6"></h6>
-                                </div> -->
-
-
-                                <!-- <div class="box">
-                                    <div>
-                                        Task ID:
-                                        <span class="taskid-label" id="taskid-text"></span>
-                                    </div>
-                                </div> -->
-                                <!-- <h5>Instruction</h5>
-                                <div style="width: 100%; height: auto;">
-
-                                    <md-block id="instruction-text"></md-block>
-
                                 </div>
-                                <h6 class="title is-6"></h6>
-                                <h5>Actions</h5>
-                                <div class="panel-body" style="height: 140px; width: 100%; overflow-y:scroll">
-                                    <div style="height: 30%; width: 100%; margin: 0 auto;">
-                                        <md-block id="action-text"></md-block>
-                                    </div>
-                                </div> -->
+
                             </div>
                         </div>
                     </div>
@@ -254,13 +224,9 @@
                                         // document.getElementById('taskid-text').innerHTML = taskId;
                                         document.getElementById('text_des-text').innerHTML = taskData.text_description;
                                         document.getElementById('raw_videoViewer').src = taskData.raw_video;
-                                        console.log(taskData.raw_video);
-                                        console.log('Video path:', document.getElementById('raw_videoViewer').src);
                                         document.getElementById('smpl_videoViewer').src = taskData.smpl_video;
-                                        console.log(taskData.smpl_video);
-                                        console.log('Video path:', document.getElementById('smpl_videoViewer').src);
-                                        // document.getElementById('keypointsViewer').src = taskData.keypoints;
-                                        // document.getElementById('actionsViewer').src = taskData.actions;
+                                        document.getElementById('keypointsViewer').src = taskData.keypoints;
+                                        document.getElementById('actionsViewer').src = taskData.actions;
                                     });
                             });
                             listItem.addEventListener("click", function () {
