@@ -144,9 +144,7 @@
                                         task to view the recording.</div>
                                     <!-- <iframe id="raw_videoViewer" src="" width="744" height="420" allow="autoplay"
                                         allowfullscreen></iframe> -->
-                                        <video id="raw_videoViewer" 
-                                        width="744" 
-                                        height="420" 
+                                    <video id="raw_videoViewer" 
                                         controls
                                         preload="auto"
                                         playsinline
@@ -158,16 +156,23 @@
                                 </div>
 
                                 <!-- SMPL Video -->
-                                <!-- <div class="box">
+                                <div class="box">
                                     <h5>SMPL Video</h5>
 
                                     <div class="column has-text-centered is-vcentered"
                                         style="font-weight: 300; font-size: 1.1em">Select a
                                         task to view the recording.</div>
-                                    <iframe id="smpl_videoViewer" src="" width="744" height="420" allow="autoplay"
-                                        allowfullscreen></iframe>
+                                    <!-- <iframe id="smpl_videoViewer" src="" width="744" height="420" allow="autoplay"
+                                        allowfullscreen></iframe> -->
+                                    <video id="smpl_videoViewer" 
+                                        controls
+                                        preload="auto"
+                                        playsinline
+                                        webkit-playsinline>
+                                        <source src="" type="video/mp4">
+                                    </video>
                                     <h6 class="title is-6"></h6>
-                                </div> -->
+                                </div>
 
                                 <!-- Humanoid Keypoints (in video form) -->
                                 <!-- <div class="box">
@@ -275,7 +280,7 @@
                                         document.getElementById('text_des-text').innerHTML = taskData.text_description;
                                         document.getElementById('raw_videoViewer').src = '/uh-1.github.io/' + taskData.raw_video;
                                         console.log('Video path:', document.getElementById('raw_videoViewer').src);
-                                        // document.getElementById('smpl_videoViewer').src = taskData.smpl_video;
+                                        document.getElementById('smpl_videoViewer').src = taskData.smpl_video;
                                         // document.getElementById('keypointsViewer').src = taskData.keypoints;
                                         // document.getElementById('actionsViewer').src = taskData.actions;
                                     });
