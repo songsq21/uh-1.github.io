@@ -3,7 +3,7 @@
 <!-- This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io). -->
 This is the repository that contains source code for the [UH-1 Website]().
 
-If you find Nerfies useful for your work please cite:
+If you find UH-1 useful for your work please cite:
 ```
 <!-- citations -->
 ```
