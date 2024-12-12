@@ -669,86 +669,6 @@
       </div>
     </div>
     <!--/ Method. -->
-
-    <!-- Pipeline. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Pipeline</h2>
-
-        <!-- Video Clip Extraction. -->
-        <h3 class="title is-4">Video Clip Extraction</h3>
-        <div class="content has-text-justified">
-          <p>
-            We use the YOLOv8 model for motion detection and filter out the single-person continuous motion.
-          </p>
-        </div>
-        <div class="column is-full has-text-centered">
-          <img src="./static/images/yolo_pipeline.jpg"
-               class="humanoidx-image"
-               alt="Humanoid-X pipeline image."/>
-        </div>
-        </br>
-        <!--/ Video Clip Extraction. -->
-
-        <!-- Video Captioning. -->
-        <h3 class="title is-4">Video Captioning</h3>
-        <div class="content has-text-justified">
-          <p>
-            We add captions to videos using Video LLaMA model with carefully designed prompts.
-          </p>
-        </div>
-        <div class="column is-full has-text-centered">
-          <img src="./static/images/vid_llama_blurred.jpg"
-               class="humanoidx-image"
-               alt="Humanoid-X pipeline image."/>
-        </div>
-        </br>
-        <!--/ Video Captioning. -->
-
-        <!-- 3D Human Pose Estimation. -->
-        <h3 class="title is-4">3D Human Pose Estimation</h3>
-        <div class="content has-text-justified">
-          <p>
-            We estimate 3D human poses in SMPL model form from the video clips with a mesh regression model based on the VIBE model.
-          </p>
-        </div>
-        <div class="column is-full has-text-centered">
-          <img src="./static/images/smpl_fixed.jpg"
-               class="humanoidx-image"
-               alt="Humanoid-X pipeline image."/>
-        </div>
-        </br>
-        <!--/ 3D Human Pose Estimation. -->
-
-        <!-- Motion Retargeting from Humans to Humanoids. -->
-        <h3 class="title is-4">Motion Retargeting from Humans to Humanoids</h3>
-        <div class="content has-text-justified">
-          <p>
-            We retarget humanoid keypoints from human motions by two steps: first we
-            optimize human shape parameters to fit the human model with the humanoid robot,
-            then we solve the humanoid motor DoF positions from adjusted human joint
-            positions with inverse kinematics.
-          </p>
-        </div>
-        <div class="column is- has-text-centered">
-          <img src="./static/images/retarget_figure.jpg"
-               class="retarget-image"
-               style="width: 60%; height: auto;"
-               alt="Humanoid-X pipeline image."/>
-        </div>
-        <!--/ Motion Retargeting from Humans to Humanoids. -->
-
-        <!-- Goal-conditioned Humanoid Control. -->
-        <h3 class="title is-4">Goal-conditioned Humanoid Control</h3>
-        <div class="content has-text-justified">
-          <p>
-            We use massively parallel simulation to train our goal-conditioned humanoid RL control policy.
-          </p>
-        </div>
-        <!--/ Goal-conditioned Humanoid Control. -->
-      </div>
-    </div>
-    <!--/ Pipeline. -->
   </div>
 </section>
 <!--/ Dataset. -->
@@ -759,19 +679,7 @@
     <!-- Header. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">UH-1 Model</h2>
-        <!-- <div class="content has-text-justified">
-          <p>
-            Humanoid-X dataset consists of 163,800 pairs of motion samples
-            \( \langle \mathcal{V}, \mathcal{T}, \mathcal{P}_{human}, \mathcal{P}_{robot}, \mathcal{A}_{robot} \rangle \)
-            from Internet videos:
-          </p>
-        </div> -->
-        <!-- <div class="column is-full has-text-centered">
-          <img src="./static/images/humanoidx.jpg"
-               class="humanoidx-image"
-               alt="Humanoid-X pipeline image."/>
-        </div> -->
+        <h2 class="title is-3">UH-1 Model Architecture</h2>
       </div>
     </div>
     <!--/ Header. -->
@@ -782,13 +690,19 @@
         <!-- <h2 class="title is-3">Pipeline</h2> -->
 
         <!-- Model Architecture. -->
-        <h2 class="title is-3">Model Architecture</h2>
         <div class="content has-text-justified">
           <p>
-            H-1 leverages the Transformer for scalable learning.
+            UH-1 leverages the Transformer for scalable learning.
             Humanoid actions are first tokenized into discrete action tokens.
             Then, the UH-1 Transformer is trained, which takes text commands as inputs
             and auto-regressively generates the corresponding humanoid action tokens.
+          </p>
+          <p>
+            With the input text instructions \( \mathcal{T} \),
+            UH-1 can either generate high-level humanoid keypoints (text-to-keypoint)
+            for the goal-conditioned policy \( \pi \) to control the humanoid robot
+            in closed-loop, or generate robotic actions \( \mathcal{A}_{robot} \)
+            for direct open-loop control (text-to-action).
           </p>
         </div>
         <div class="column is-full has-text-centered">
@@ -800,7 +714,7 @@
         <!--/ Model Architecture. -->
 
         <!-- Control Modes. -->
-        <h2 class="title is-3">Control Modes</h2>
+        <!-- <h2 class="title is-3">Control Modes</h2>
         <div class="content has-text-justified">
           <p>
             UH-1 can either generate high-level humanoid keypoints (text-to-keypoint)
@@ -814,40 +728,11 @@
                style="width: 70%; height: auto;"
                alt="Humanoid-X pipeline image."/>
         </div>
-        </br>
+        </br> -->
         <!--/ Control Modes. -->
       </div>
     </div>
     <!--/ Method. -->
-
-
-    <!-- Concurrent Work. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 <!--/ UH-1 Model. -->
