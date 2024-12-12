@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Enhanced Data Explorer with Bulma</title>
+    <title>Humanoid-X Data Explorer with Bulma</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
     <style>
         .is-halfheight {
@@ -127,19 +127,64 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="content">
-
+                                <!-- Text Description -->
                                 <div class="box">
-                                    <h5>Recording</h5>
+                                    <h5>Text Description</h5>
+                                    <div>
+                                        <span class="text_des-label" id="text_des-text"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Raw Video -->
+                                <div class="box">
+                                    <h5>Raw Video</h5>
 
                                     <div class="column has-text-centered is-vcentered"
                                         style="font-weight: 300; font-size: 1.1em">Select a
                                         task to view the recording.</div>
-                                    <iframe id="recordingViewer" src="" width="744" height="420" allow="autoplay"
+                                    <iframe id="raw_videoViewer" src="" width="744" height="420" allow="autoplay"
                                         allowfullscreen></iframe>
                                     <h6 class="title is-6"></h6>
                                 </div>
 
+                                <!-- SMPL Video -->
                                 <div class="box">
+                                    <h5>SMPL Video</h5>
+
+                                    <div class="column has-text-centered is-vcentered"
+                                        style="font-weight: 300; font-size: 1.1em">Select a
+                                        task to view the recording.</div>
+                                    <iframe id="smpl_videoViewer" src="" width="744" height="420" allow="autoplay"
+                                        allowfullscreen></iframe>
+                                    <h6 class="title is-6"></h6>
+                                </div>
+
+                                <!-- Humanoid Keypoints (in video form) -->
+                                <div class="box">
+                                    <h5>Humanoid Keypoints</h5>
+
+                                    <div class="column has-text-centered is-vcentered"
+                                        style="font-weight: 300; font-size: 1.1em">Select a
+                                        task to view the recording.</div>
+                                    <iframe id="keypointsViewer" src="" width="744" height="420" allow="autoplay"
+                                        allowfullscreen></iframe>
+                                    <h6 class="title is-6"></h6>
+                                </div>
+
+                                <!-- Humanoid Actions (in video form) -->
+                                <div class="box">
+                                    <h5>Humanoid Actions</h5>
+
+                                    <div class="column has-text-centered is-vcentered"
+                                        style="font-weight: 300; font-size: 1.1em">Select a
+                                        task to view the recording.</div>
+                                    <iframe id="actionsViewer" src="" width="744" height="420" allow="autoplay"
+                                        allowfullscreen></iframe>
+                                    <h6 class="title is-6"></h6>
+                                </div>
+
+
+                                <!-- <div class="box">
                                     <div>
                                         Task ID:
                                         <span class="taskid-label" id="taskid-text"></span>
@@ -157,7 +202,7 @@
                                     <div style="height: 30%; width: 100%; margin: 0 auto;">
                                         <md-block id="action-text"></md-block>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -209,12 +254,19 @@
                                                 break;
                                             }
                                         }
-                                        document.getElementById('taskid-text').innerHTML = taskId;
-                                        document.getElementById('instruction-text').innerHTML = taskData.instruction;
-                                        document.getElementById('action-text').innerHTML = taskData.actions;
+                                        // document.getElementById('taskid-text').innerHTML = taskId;
+                                        // document.getElementById('instruction-text').innerHTML = taskData.instruction;
+                                        // document.getElementById('action-text').innerHTML = taskData.actions;
 
                                         // Update the recording viewer
-                                        document.getElementById('recordingViewer').src = taskData.video;
+                                        // document.getElementById('recordingViewer').src = taskData.video;
+                                        
+                                        document.getElementById('taskid-text').innerHTML = taskId;
+                                        document.getElementById('text_des-text').innerHTML = taskData.text_desription;
+                                        document.getElementById('raw_videoViewer').src = taskData.raw_video;
+                                        document.getElementById('smpl_videoViewer').src = taskData.smpl_video;
+                                        document.getElementById('keypointsViewer').src = taskData.keypoints;
+                                        document.getElementById('actionsViewer').src = taskData.actions;
                                     });
                             });
                             listItem.addEventListener("click", function () {
