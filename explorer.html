@@ -131,7 +131,9 @@
                                 <div class="box">
                                     <h5>Text Description</h5>
                                     <div>
-                                        <span id="text_des-text"></span>
+                                        Task ID:
+                                        <md-block id="text_des-text"></md-block>
+                                        <!-- <span id="text_des-text"></span> -->
                                     </div>
                                 </div>
 
@@ -238,7 +240,7 @@
                             const listItem = document.createElement('li');
                             listItem.classList.add('task-list');
                             number++;
-                            listItem.textContent = `Task ${number}`;
+                            listItem.textContent = `Motion Sample ${number}`;
 
                             taskList.appendChild(listItem);
                             listItem.addEventListener('click', () => {
