@@ -111,10 +111,10 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="title is-3">Data Explorer</h2>
+            <h2 class="title is-3">Humanoid-X Data Explorer</h2>
             <div class="notification is-info">
                 <md-block>
-                    Below we show *a small subset of* **OSWorld** tasks, which allows you to explore the data in detail.
+                    Below we show *a small subset of* motion clips in **Humanoid-X** dataset, which allows you to explore the data in detail.
                 </md-block>
             </div>
 
@@ -203,7 +203,8 @@
                             taskList.appendChild(listItem);
                             listItem.addEventListener('click', () => {
                                 // Load the task data and update the UI
-                                fetch(`./static/data/test_small_annotations_2.json`)
+                                // fetch(`./static/data/test_small_annotations_2.json`)
+                                fetch(`./static_explorer/data_list_config.json`)
                                     .then(response => response.json())
                                     .then(taskData => {
                                         // Update the instruction and action text
