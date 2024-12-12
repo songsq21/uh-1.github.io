@@ -138,17 +138,15 @@
                                 <!-- Raw Video -->
                                 <div class="box">
                                     <h5>Raw Video</h5>
-                                    <video id="raw_videoViewer" controls autoplay muted loop>
-                                        <source src="" type="video/mp4">
-                                    </video>
+                                    <iframe id="raw_videoViewer" src="" width="744" height="420" allow="autoplay"
+                                        allowfullscreen></iframe>
                                 </div>
 
                                 <!-- SMPL Video -->
                                 <div class="box">
                                     <h5>SMPL Video</h5>
-                                    <video id="smpl_videoViewer" controls autoplay muted loop>
-                                        <source src="" type="video/mp4">
-                                    </video>
+                                    <iframe id="smpl_videoViewer" src="" width="744" height="420" allow="autoplay"
+                                        allowfullscreen></iframe>
                                 </div>
 
                                 <!-- Humanoid Keypoints (in video form) -->
@@ -208,7 +206,7 @@
         document.addEventListener('DOMContentLoaded', function () {
 
             // fetch('./static/data/test_small_recording.json')
-            fetch(`./static_explorer/data_sort_list.json`)
+            fetch(`./static/data_sort_list.json`)
                 .then(response => response.json())
                 .then(jsonData => {
                     const container = document.getElementById('categoriesContainer');
@@ -236,7 +234,7 @@
                             listItem.addEventListener('click', () => {
                                 // Load the task data and update the UI
                                 // fetch(`./static/data/test_small_annotations_2.json`)
-                                fetch(`./static_explorer/data_list_config.json`)
+                                fetch(`./static/data_list_config.json`)
                                     .then(response => response.json())
                                     .then(taskData => {
                                         // Update the instruction and action text
