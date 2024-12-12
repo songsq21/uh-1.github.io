@@ -152,17 +152,21 @@
                                 <!-- Humanoid Keypoints (in video form) -->
                                 <div class="box">
                                     <h5>Humanoid Keypoints</h5>
-                                    <iframe id="keypointsViewer" src="" width="640" height="480" allow="autoplay"
+                                    <iframe id="keypointsViewer" src="" width="480" height="360" allow="autoplay"
                                         allowfullscreen></iframe>
                                 </div>
 
                                 <!-- Humanoid Actions (in video form) -->
                                 <div class="box">
                                     <h5>Humanoid Actions</h5>
-                                    <iframe id="actionsViewer" src="" width="640" height="480" allow="autoplay"
+                                    <iframe id="actionsViewer" src="" width="480" height="360" allow="autoplay"
                                         allowfullscreen></iframe>
                                 </div>
 
+                                <div>
+                                    Task ID:
+                                    <span class="taskid-label" id="taskid-text"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -221,7 +225,7 @@
                                         // Update the recording viewer
                                         // document.getElementById('recordingViewer').src = taskData.video;
                                         
-                                        // document.getElementById('taskid-text').innerHTML = taskId;
+                                        document.getElementById('taskid-text').innerHTML = taskId;
                                         document.getElementById('text_des-text').innerHTML = taskData.text_description;
                                         document.getElementById('raw_videoViewer').src = taskData.raw_video;
                                         document.getElementById('smpl_videoViewer').src = taskData.smpl_video;
