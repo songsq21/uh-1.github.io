@@ -223,7 +223,8 @@
                                     .then(taskData => {
                                         // Update the instruction and action text
                                         for (i = 0; i < taskData.length; i++) {
-                                            if (taskData[i].domain == category && taskData[i].id == taskId) {
+                                            // if (taskData[i].domain == category && taskData[i].id == taskId) {
+                                            if (taskData[i].id == taskId) {
                                                 taskData = taskData[i];
                                                 break;
                                             }
@@ -262,6 +263,8 @@
                                             document.getElementById('smpl_videoViewer').style.display = 'block';
                                             document.getElementById('warning-smpl-video').style.display = 'none';
                                         }
+                                        console.log(document.getElementById('raw_videoViewer').src);
+                                        console.log(document.getElementById('smpl_videoViewer').src);
                                         console.log(document.getElementById('raw_videoViewer').style.display);
                                         console.log(document.getElementById('warning-raw-video').style.display);
                                         console.log(document.getElementById('smpl_videoViewer').style.display);
