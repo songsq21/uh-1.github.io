@@ -1,4 +1,38 @@
 {
+    "AMASS": [
+      "000056",
+      "000162",
+      "000300",
+      "000328",
+      "000402",
+      "000573",
+      "000657",
+      "000754",
+      "000987"
+    ],
+
+    "Charades": [
+      "1H6PS_clip_1",
+      "2WW04_clip_1"
+    ],
+
+    "HAA500": [
+      "battlerope_jumpingjack_2_clip1",
+      "Brushing_Floor_clip_1"
+    ],
+
+    "IDEA400": [
+      "Mopping_The_Floor_And_Walking_At_The_Same_Time_clip_1",
+      "Shake_hands_and_say_goodbye_while_standing_1_clip1"
+    ],
+
+    "Kinetics700": [
+      "_-DsSsbMa9k_000032_000042_clip_1",
+      "_0m_YMpQayA_000168_000178_clip_1",
+      "_0S9ByTZPL4_000003_000013_clip_1",
+      "_1WeIYv9q3Y_000006_000016_clip_11"
+    ],
+
     "MotionX": [
       "ALS_IceBucket_Challenge_17_clip1",
       "Ancient_Drum_3_clip8",
@@ -34,39 +68,5 @@
       "practice_staying_low_with_the_tennis_lunge_exercise_clip_2",
       "stop_dancing_awkward__bad_habit_15__staying_in_your_box__clip_2",
       "the_perfect_pull_up___do_it_right_clip_5"
-    ],
-
-    "AMASS": [
-      "000056",
-      "000162",
-      "000300",
-      "000328",
-      "000402",
-      "000573",
-      "000657",
-      "000754",
-      "000987"
-    ],
-
-    "Kinetics700": [
-      "_-DsSsbMa9k_000032_000042_clip_1",
-      "_0m_YMpQayA_000168_000178_clip_1",
-      "_0S9ByTZPL4_000003_000013_clip_1",
-      "_1WeIYv9q3Y_000006_000016_clip_11"
-    ],
-
-    "Charades": [
-      "1H6PS_clip_1",
-      "2WW04_clip_1"
-    ],
-
-    "HAA500": [
-      "battlerope_jumpingjack_2_clip1",
-      "Brushing_Floor_clip_1"
-    ],
-
-    "IDEA400": [
-      "Mopping_The_Floor_And_Walking_At_The_Same_Time_clip_1",
-      "Shake_hands_and_say_goodbye_while_standing_1_clip1"
     ]
   }

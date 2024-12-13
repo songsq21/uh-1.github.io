@@ -140,6 +140,11 @@
                                     <h5>Raw Video</h5>
                                     <iframe id="raw_videoViewer" src="" allow="autoplay"
                                         allowfullscreen></iframe>
+                                    <div>
+                                        <md-block id="warning-raw-video">
+                                            Please note that for AMASS dataset, the raw video is not available.
+                                        </md-block>
+                                    </div>
                                 </div>
 
                                 <!-- SMPL Video -->
@@ -147,6 +152,11 @@
                                     <h5>SMPL Video</h5>
                                     <iframe id="smpl_videoViewer" src="" height=100% allow="autoplay"
                                         allowfullscreen></iframe>
+                                    <div>
+                                        <md-block id="warning-smpl-video">
+                                            Please note that for AMASS dataset, the SMPL video is not available.
+                                        </md-block>
+                                    </div>
                                 </div>
 
                                 <!-- Humanoid Keypoints (in video form) -->
@@ -231,6 +241,26 @@
                                         document.getElementById('smpl_videoViewer').src = taskData.smpl_video;
                                         document.getElementById('keypointsViewer').src = taskData.keypoints;
                                         document.getElementById('actionsViewer').src = taskData.actions;
+
+                                        if (!document.getElementById('raw_videoViewer').src ||
+                                            document.getElementById('raw_videoViewer').src === '' ||
+                                            document.getElementById('raw_videoViewer').src === 'about:blank') {
+                                            document.getElementById('raw_videoViewer').style.display = 'none';
+                                            document.getElementById('warning-raw-video').style.display = 'block';
+                                        } else {
+                                            document.getElementById('raw_videoViewer').style.display = 'block';
+                                            document.getElementById('warning-raw-video').style.display = 'none';
+                                        }
+                                        if (!document.getElementById('smpl_videoViewer').src ||
+                                            document.getElementById('smpl_videoViewer').src === '' ||
+                                            document.getElementById('smpl_videoViewer').src === 'about:blank') {
+                                            document.getElementById('smpl_videoViewer').style.display = 'none';
+                                            document.getElementById('warning-smpl-video').style.display = 'block';
+                                        } else {
+                                            document.getElementById('smpl_videoViewer').style.display = 'block';
+                                            document.getElementById('warning-smpl-video').style.display = 'none';
+                                        }
+
                                     });
                             });
                             listItem.addEventListener("click", function () {
