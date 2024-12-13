@@ -244,6 +244,7 @@
 
                                         if (!document.getElementById('raw_videoViewer').src ||
                                             document.getElementById('raw_videoViewer').src === '' ||
+                                            document.getElementById('raw_videoViewer').src === "" ||
                                             document.getElementById('raw_videoViewer').src === 'about:blank') {
                                             document.getElementById('raw_videoViewer').style.display = 'none';
                                             document.getElementById('warning-raw-video').style.display = 'block';
@@ -253,6 +254,7 @@
                                         }
                                         if (!document.getElementById('smpl_videoViewer').src ||
                                             document.getElementById('smpl_videoViewer').src === '' ||
+                                            document.getElementById('smpl_videoViewer').src === "" ||
                                             document.getElementById('smpl_videoViewer').src === 'about:blank') {
                                             document.getElementById('smpl_videoViewer').style.display = 'none';
                                             document.getElementById('warning-smpl-video').style.display = 'block';
